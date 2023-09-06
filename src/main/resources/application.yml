@@ -1,0 +1,15 @@
+server:
+  port: 9001
+spring:
+  mvc:
+    throw-exception-if-no-handler-found: true
+  web:
+    resources:
+      add-mappings: false
+  datasource:
+    url: jdbc:mysql://localhost/hotelManager?useSSL=false
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
