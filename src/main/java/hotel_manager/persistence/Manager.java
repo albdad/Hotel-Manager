@@ -24,8 +24,8 @@ public class Manager {
     private Long id;
 
     @Email
-    @NotEmpty
     @NotNull
+    @Column(unique = true)
     private String eMailAddress;
 
     @NotNull
